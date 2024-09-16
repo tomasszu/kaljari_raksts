@@ -1,0 +1,77 @@
+\documentclass[conference]{IEEEtran} % or another class, depending on your target conference
+
+% Packages
+\usepackage{graphicx} % For including images
+\usepackage{amsmath}  % For mathematical formulas
+\usepackage{hyperref} % For hyperlinks
+\usepackage{cite}     % For handling citations
+\usepackage{caption}  % For customizing captions
+
+% Title
+\title{Multi-Step Object Re-Identification on Edge Devices: A Pipeline for Vehicle Re-Identification}
+
+% Author(s)
+\author{
+	\IEEEauthorblockN{Tomass Zutis, Anzelika Bureka, Janis Judvaitis, Janis Arents, Modris Greitans, Peteris Racinskis}
+	\IEEEauthorblockA{
+		Institute of Electronics and Computer Science, Latvia\\
+		janis.arents@edi.lv
+	}
+}
+
+% Document
+\begin{document}
+	
+	% Title page
+	\maketitle
+	
+	% Abstract
+	\begin{abstract}
+A method that leverages a multi-step process focused on extracting and using object features for object re-identification is described. The proposed pipeline includes steps such as: detecting an object, converting its features into a vector embedding, storing this embedding in a vector database, and then querying the database to find the same or similar objects based on their feature embeddings. This approach allows for the identification of the same object across different images or cameras, even in varying locations, such as in Vehicle Re-Identification scenarios. For situations where re-identification needs to happen in outdoor environments or on-the-go, implementing this process on edge devices becomes crucial. Therefore, multiple ways to tailor the pipeline and its outputs for edge devices are outlined and investigated. The presentation provides a detailed explanation of the pipeline’s structure and how it functions on edge devices, along with the experimental setup demonstrating its application, particularly in vehicle re-identification.
+	\end{abstract}
+	
+	% Keywords
+	\begin{IEEEkeywords}
+		Re-Identification, Feature extractions, Vector embeddings, Neural networks, Edge devices, Vector 
+		databases
+	\end{IEEEkeywords}
+	
+	% Sections
+	\section{Introduction}
+%	Introduce the problem of vehicle re-identification and the challenges of implementing this on edge devices. Discuss the significance of efficient computation in real-time applications.
+
+Monitoring and recognizing objects in photos and videos has long been a field of interest for many. It has also become a well researched topic ever since computer vision has accelerated it's possibilities, in the last decade especially.
+% vajag rakstu par computer vision potential un possibilities, lkm jau vecaaku
+ With computer vision came object classification, which helped us classify images based on the object depicted. That gave us the answer to the question: "What is the object in the image?"
+ % Te rakstu par object classification
+  Later on came great progress in object detection. That could answer the questions of: "Where are the objects in the image?" and "What are the objects in the image". These were great leaps forward if the job was to pay attention to only objects of a specific class and there were multiple of them in a frame.
+% Te varetu ieklaut atsauci uz kadu pirmo sasniegumu objektu detektesanaa un pateikt ka vot vini domaja ka tas bija sasniegums
+ In this article, however, the authors are looking for a solution that could see these objects of a single class and distinguish between them, using the specific features that exist only for a single individual in a class.
+% Te laikam vajag ielikt definiciju no kaada raksta:
+ This problem is called object Re-Identification - the correct identification of an individual of a class in any number of scenes, where there are usually more of this class objects visible.
+	
+	\section{Related Work}
+%	Briefly survey recent work in object re-identification, with a focus on vehicles and edge device implementation. Cite relevant papers.
+	
+	\section{Proposed Method}
+%	Describe the steps of your multi-step pipeline for vehicle re-identification. Use equations and figures as needed.
+%	\begin{itemize}
+%		\item Object Detection
+%		\item Feature Extraction
+%		\item Vector Embedding with LanceDB
+%	\end{itemize}
+	
+	\section{Experiments and Results}
+%	Present the experiments, datasets, and evaluation metrics used to validate the method. Include tables, graphs, and illustrations.
+	
+	\section{Discussion}
+%	Discuss the results and their implications. Highlight the future work on edge device implementation.
+	
+	\section{Conclusion}
+%	Summarize the main findings of the paper and the significance of your work.
+	
+	% Bibliography
+	\bibliographystyle{IEEEtran}
+	\bibliography{references} % Make sure you have a .bib file with your references
+	
+\end{document}
