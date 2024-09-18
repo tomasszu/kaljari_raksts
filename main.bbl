@@ -54,4 +54,10 @@ C.~Wang, Y.~Yang, M.~Qi, and H.~Ma, ``Efficient cloud-edge collaborative
 K.~Cao, Y.~Liu, G.~Meng, and Q.~Sun, ``An overview on edge computing
   research,'' \emph{IEEE access}, vol.~8, pp. 85\,714--85\,728, 2020.
 
+\bibitem{kuma2019vehicle}
+R.~Kuma, E.~Weill, F.~Aghdasi, and P.~Sriram, ``Vehicle re-identification: an
+  efficient baseline using triplet embedding,'' in \emph{2019 International
+  Joint Conference on Neural Networks (IJCNN)}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2019, pp. 1--9.
+
 \end{thebibliography}

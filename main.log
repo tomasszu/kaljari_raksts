@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.9.16)  18 SEP 2024 11:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.9.16)  18 SEP 2024 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -442,10 +442,20 @@ LaTeX Info: Redefining \nameref on input line 24.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (./main.bbl [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+<re_id_diagramma_1.png, id=43, 1285.80376pt x 349.305pt>
+File: re_id_diagramma_1.png Graphic file (type png)
+<use re_id_diagramma_1.png>
+Package pdftex.def Info: re_id_diagramma_1.png  used on input line 60.
+(pdftex.def)             Requested size: 258.0pt x 70.08894pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 60--61
+ [][] 
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-])
+ <./re_id_diagramma_1.png (PNG copy)>] (./main.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -461,25 +471,25 @@ Before submitting the final camera ready copy, remember to:
 
 ] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 27DB3F90AD2808043AD08C244BB8D7FA;774.
+(rerunfilecheck)             Checksum: 6863CA01B4C431A50F05E69AF4C5ACC7;1034.
  ) 
 Here is how much of TeX's memory you used:
- 10950 strings out of 478287
- 179893 string characters out of 5849289
- 493302 words of memory out of 5000000
- 29028 multiletter control sequences out of 15000+600000
- 498626 words of font info for 76 fonts, out of 8000000 for 9000
+ 10971 strings out of 478287
+ 180285 string characters out of 5849289
+ 490533 words of memory out of 5000000
+ 29043 multiletter control sequences out of 15000+600000
+ 499762 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,63p,1091b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,63p,1091b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on main.pdf (2 pages, 64660 bytes).
+Output written on main.pdf (2 pages, 115850 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 94 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
+ 70 words of extra memory for PDF output out of 10000 (max. 10000000)
 
