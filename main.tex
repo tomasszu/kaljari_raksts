@@ -7,6 +7,7 @@
 \usepackage{cite}     % For handling citations
 \usepackage{caption}  % For customizing captions
 
+
 % Title
 \title{Multi-Step Object Re-Identification on Edge Devices: A Pipeline for Vehicle Re-Identification}
 
@@ -40,15 +41,18 @@ A method that leverages a multi-step process focused on extracting and using obj
 	\section{Introduction}
 %	Introduce the problem of vehicle re-identification and the challenges of implementing this on edge devices. Discuss the significance of efficient computation in real-time applications.
 
-Monitoring and recognizing objects in photos and videos has long been a field of interest for many. It has also become a well researched topic ever since computer vision has accelerated it's possibilities, in the last decade especially.
+Monitoring and recognizing objects in photos and videos has long been a field of interest for many. It has also become a well researched topic ever since computer vision has accelerated it's possibilities, in the last decade especially  \cite{prince2012computer}.
 % vajag rakstu par computer vision potential un possibilities, lkm jau vecaaku
- With computer vision came object classification, which helped us classify images based on the object depicted. That gave us the answer to the question: "What is the object in the image?"
+ With computer vision came image classification, which helped us classify images based on the object depicted. That gave us the answer to the question: "What is the object in the image?" \cite{lu2007survey}.
  % Te rakstu par object classification
-  Later on came great progress in object detection. That could answer the questions of: "Where are the objects in the image?" and "What are the objects in the image". These were great leaps forward if the job was to pay attention to only objects of a specific class and there were multiple of them in a frame.
+  Later on came great progress in object detection. That could answer the questions of: "Where are the objects in the image?" and "What are the objects in the image". These were great leaps forward if the job was to pay attention to only objects of a specific class and there were multiple of them in a frame. This was first and foremost fostered by the advancement of the Convolutional Neural Network (CNN) and its variants. \cite{du2018understanding}.
 % Te varetu ieklaut atsauci uz kadu pirmo sasniegumu objektu detektesanaa un pateikt ka vot vini domaja ka tas bija sasniegums
  In this article, however, the authors are looking for a solution that could see these objects of a single class and distinguish between them, using the specific features that exist only for a single individual in a class.
 % Te laikam vajag ielikt definiciju no kaada raksta:
- This problem is called object Re-Identification - the correct identification of an individual of a class in any number of scenes, where there are usually more of this class objects visible.
+ This problem is called object Re-Identification - widely regarded as a sub-problem of image retrieval \cite{li2019object}.In imagery from at least two different cameras, object Re-identification aims to correctly label the same individual after imaging conditions (like scene, lighting conditions, object pose and others) have changed. In fact, this could be repeated for a specific class in any number of scenes, where there are usually more of these class objects visible. These could be images of vehicles, people or even animals or simple in-animate objects that have great intra-class variations.
+ We are also in a unique position where there is still a lot of research to be done on re-identification itself, however, at the same time we are faced with the need to tailor these solutions for edge computing to preserve relevance in global technology and research trends. This is because some of the most common applications of re-identification are in traffic and security that use network cameras and cloud computing \cite{barthelemy2019edge} \cite{wang2024efficient}.
+ Cities are looking for edge-computing devices using computer vision and deep neural networks to track real-time events in the public space. With the development of the Internet of Everything (IoE), the number of smart devices connected to the internet, the volume of available video footage, and the influx of sensory data have made the large-scale accumulation of big data inevitable \cite{cao2020overview}. This is why fully automated systems are needed to process data and re-identify patterns and objects in the smart cities environment, for no human or group of humans can be employed to process all this data manually and more crucially - in real time.
+ In the scenario of traffic monitoring, there is the need to re-identify vehicles on the go to: first of all, be able to track them in a road network and, second, model future traffic based on the existing patterns \cite{barthelemy2019edge}. Edge computing proposes a hardware and software solution that would do this in real time - live video feed would be received from a network camera, that's deployed in the area of interest and the video analytics (i.e. detection and re-identification algorithms) are run directly on the edge device and only the results of the processing are transmitted.
 	
 	\section{Related Work}
 %	Briefly survey recent work in object re-identification, with a focus on vehicles and edge device implementation. Cite relevant papers.
