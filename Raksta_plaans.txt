@@ -1,0 +1,79 @@
+2.) Related Work and State of the Art
+
+Aprakstu SOTA katrai sastavdaļai vai teorētiskai daļai no ReID pipeline un pieminu ( tur, kur attiecināms) kāpēc esošie risinājumi nav pietiekoši, vai to, ka viņi ir pietiekoši, tikai neviens vēl nav ielicis šādā pipeline, ReID pipeline mērķa sasniegšanai.
+
+*Object detection
+*Object ReID un feature extractions ( ne tikai state of the art bet mazliet pašu teoriju par vector embeddings)
+*Person ReID
+*Vehicle ReID
+*Available datasets par tēmu un uz tiem veidoti benchmarks
+*Synthetic datasets par tēmu
+
+Beigās arī pieminu to, ka daudzām no šīm metodēm grūti dabūt reliable performance, ja tas netiek lietots uz metodei piemērotā benchmark, bet uz paša uzstādītām network kamerām.
+
++ Ilustrācija ar atšķirībām starp dažādo publisko datasetu mašīnām, kas parāda lielu parameter shift starp datasetiem.
+
+3.) Proposed methodology
+
+Galvenokārt par pipeline ideju un visām sastāvdaļām, kas tajā ietilpts. Kā tas viss saietu kopā un kādi uzlabojuma darbi būtu veicami dažām no sastāvdaļām, lai tas viss būtu pielāgots mūsu scenārijam ( vajadzībām).
+
+Tā kā mēģinam rakstīt par object detection globāli tad mēģināšu to aprakstīt galvenokārt, kā dažādus procesus, kas varētu sekot viens pēc otra un tikai pašās beigās iepazīstināšu ar vehicle Re-ID network camera pipeline piemēru.
+
+* Object detection
+* Feature extraction
+* Saving and querying from vector database
+
+*Application in smart city environment - Vehicle ReID (papildus arī par video feed no dažādām network kamerām, kameras attēla zonām un attēlu izgriešanu no frame)
+
+*Edge device considerations (teorija, spekulācija par nepieciešamajām optimizācijām)
+
++ diagramma - flowchart ar pipeline soļiem
+
+4.) Experimental setup
+
+Vēl noprecizēšu, bet ideja kopumā:
+
+** Vehicle counting and tracking
+	* Receiving video from Network camera
+	* Object detection + Tracking
+	* Object cropping and counting
+	* Testēšanas metodes
+** Vehicle Re-Identification
+	* Turning cropped objects into feature extractions (ReID modelis un arhitektūŗas maiņa)
+	* Saving in vehicle database
+	* Querying from vector database
+	* Testēšanas metodes
+
+*Izmantotās publiskās datubāzes apmācībai
+*Sintētiskie dati
+*Ensemble modelling
+*Hyperparameter pārlase
+
+**Testa scenāriju izveidošana pipeline kopumā un datu anotēšana
+	* Testa scenāriji no publiski pieejamajiem datasetiem
+	* Testa scenāriji no EDI webkameru in-house datasetiem
+* Performance metrics
+*Hardware (kas tā kā nav uz cloud, tad teorētiski ir jau pietuvināts risinājums edge)
+
+6.) Results
+
+daudz rezultāti pa attiecīgajām pozīcijām - dažādi procenti no visa kas ir izmēģināts. Iespējas ievietot tabulas un grafikus (diagrammas). Ļoti daudz salīdzinājumi. kas veikti dažādi trennējot, modificiējot modeļu arhitektūru, dažādi saglabajot un mainot datasetus, eksperimentejot ar pašu datasetu izveidi, par vehicle counting un tracking.
+
+7.) Future research
+
+Vel domāšu, bet kopumā:
+
+Pieskaramies smagāk Edge devices un teoretiskai modeļu u.c. soļu optimizācijai piemēram uz Jetson.
+Publisko datasetu fine-tuning ar mūsu pašu (mazāka izmēra) datasetu, lai mazinātu parameter shift - tas ko daram šobrīd.
+Dziļāks ieskats pašos vektoros, kas līdz šim ir bijis - "black box" u.c.
+
+8.) Conclusion
+
+...
+
+
+
+
+
+
+
