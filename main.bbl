@@ -108,4 +108,51 @@ Z.~Zheng, T.~Ruan, Y.~Wei, Y.~Yang, and T.~Mei, ``Vehiclenet: Learning robust
   \url{https://paperswithcode.com/task/vehicle-re-identification#benchmarks},
   accessed: September 23, 2024.
 
+\bibitem{paperswithcode2024Persreid}
+------, ``Person re-identification benchmarks,''
+  \url{https://paperswithcode.com/task/person-re-identification}, accessed:
+  September 24, 2024.
+
+\bibitem{sharma2021person}
+C.~Sharma, S.~R. Kapil, and D.~Chapman, ``Person re-identification with a
+  locally aware transformer,'' \emph{arXiv preprint arXiv:2106.03720}, 2021.
+
+\bibitem{wieczorek2021unreasonable}
+M.~Wieczorek, B.~Rychalska, and J.~D{\k{a}}browski, ``On the unreasonable
+  effectiveness of centroids in image retrieval,'' in \emph{Neural Information
+  Processing: 28th International Conference, ICONIP 2021, Sanur, Bali,
+  Indonesia, December 8--12, 2021, Proceedings, Part IV 28}.\hskip 1em plus
+  0.5em minus 0.4em\relax Springer, 2021, pp. 212--223.
+
+\bibitem{wen2020ua}
+L.~Wen, D.~Du, Z.~Cai, Z.~Lei, M.-C. Chang, H.~Qi, J.~Lim, M.-H. Yang, and
+  S.~Lyu, ``Ua-detrac: A new benchmark and protocol for multi-object detection
+  and tracking,'' \emph{Computer Vision and Image Understanding}, vol. 193, p.
+  102907, 2020.
+
+\bibitem{liu2016deep}
+H.~Liu, Y.~Tian, Y.~Yang, L.~Pang, and T.~Huang, ``Deep relative distance
+  learning: Tell the difference between similar vehicles,'' in
+  \emph{Proceedings of the IEEE conference on computer vision and pattern
+  recognition}, 2016, pp. 2167--2175.
+
+\bibitem{liu2016deep2}
+X.~Liu, W.~Liu, T.~Mei, and H.~Ma, ``A deep learning-based approach to
+  progressive vehicle re-identification for urban surveillance,'' in
+  \emph{Computer Vision--ECCV 2016: 14th European Conference, Amsterdam, The
+  Netherlands, October 11-14, 2016, Proceedings, Part II 14}.\hskip 1em plus
+  0.5em minus 0.4em\relax Springer, 2016, pp. 869--884.
+
+\bibitem{tang2019cityflow}
+Z.~Tang, M.~Naphade, M.-Y. Liu, X.~Yang, S.~Birchfield, S.~Wang, R.~Kumar,
+  D.~Anastasiu, and J.-N. Hwang, ``Cityflow: A city-scale benchmark for
+  multi-target multi-camera vehicle tracking and re-identification,'' in
+  \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, 2019, pp. 8797--8806.
+
+\bibitem{aicity2020data}
+{AI City Challenge}, ``2020 data and evaluation,''
+  \url{https://www.aicitychallenge.org/2020-data-and-evaluation/}, 2020,
+  accessed: September 24, 2024.
+
 \end{thebibliography}
