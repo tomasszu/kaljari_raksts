@@ -72,6 +72,7 @@ Monitoring and recognizing objects in photos and videos has long been a field of
 Object re-identification to this day is heavily reliant on extracting robust feature representations for the objects we are trying to save. Differences in lighting, angle, occlusions, multiple models of the same object (vehicle) are an obstacle in getting reliable predictions \cite{kuma2019vehicle}. However, there is more to a working re-identification pipeline than just looking for the best way to produce vector embeddings. We have looked at the state of the art for multiple components of this problem, such ass: Object detection, Object re-identification and feature extractions, Person re-Identification, Vehicle re-identification, Available datasets, Synthetic datasets and Edge implementation.
 	
 	\subsection{Object detection}
+	\label{sec:object detection}
 	
 		Convolutional neural networks (CNNs) have been incredibly incremental in computer vision tasks, including object detection. YOLO - the "You Only Look Once" model is one of the best performing and regularly maintained choices. The latest YOLO v8 version (in the authors opinion v8 is the latest model with widespread and public support) has shown significant improvements in accuracy and speed \cite{Rath2023online}, which is crucial for real-time applications like ours. YOLO v8 leverages the experience from the previous YOLO versions, having around 10\% better mean average precision in object detection than the previously popular v5 (when comparing medium model size).
 	
@@ -82,6 +83,7 @@ Object re-identification to this day is heavily reliant on extracting robust fea
 		As of 2024 CNNs have become predominant choices in object features extraction thanks to their strong representation power and the ability to learn deep invariant embeddings \cite{zheng2019joint}.
 	
 	\subsection{Vehicle re-identification}
+	\label{sec:vehicle re-identification}
 	
 		It is the case that in re-identification, there seems to be a better tailored model for each benchmark out there. For example, in the realm of Vehicle Re-ID benchmarks MBR4B-LAI model by Almeida \textit{et al.} \cite{almeida2023strength} tops the VeRi-776 benchmark, "A strong baseline" model by Huynh \textit{et al.} \cite{huynh2021strong} tops the CityFlow benchmark and the vehiclenet model by Zheng \textit{et al.} \cite{zheng2019vehiclenet} is best at the VeRi benchmark. However we have chosen to pay particular interest to the paper by Zheng \textit{et al.} because of the baseline model that is applicable to all types of object re-identification and feature extraction. In \cite{zheng2017discriminatively} Zheng \textit{et al.} first introduces us to their baseline model and its architecture and demonstrates its capabilities specifically in pedestrian re-identification. In further papers, however, Zheng \textit{et al.} demonstrate tailoring of this baseline to vehicle re-identification \cite{zheng2019vehiclenet}, \cite{zheng2020vehiclenet} and person re-identification \cite{zheng2019joint}. We underline this baseline models usefulness by the versatility of its use in publications, its open code base and customizability and it's entry into most benchmarks. Even though it tops only one of them, it always keeps close to the top in terms of the Rank1 precision, according to the benchmark results on Papers with Code \cite{paperswithcode2024reid}. The model is implemented in Pytorch and is based on ResNet50 pre-trained on ImageNet, although this backbone is customizable.
 	
@@ -100,17 +102,51 @@ Object re-identification to this day is heavily reliant on extracting robust fea
 	 \begin{figure}[t]
 		\centering
 		\includegraphics[width=0.5\textwidth]{re_id_diagramma_2.png} % Adjust width as needed
-		\caption{Parameter shift is visible between the (from the left) VehicleID \cite{liu2016deep}, VeRi-776 \cite{liu2016deep2} and CityFlow datasets.}
+		\caption{The difference between the distribution of vehicles shows us the parameter shift between the (from the left) VehicleID \cite{liu2016deep}, VeRi-776 \cite{liu2016deep2} and CityFlow datasets.}
 		\label{fig:fig2} % Label for referencing the image
 	\end{figure}
 	
 	\subsection{Synthetic datasets}
+		When creating synthetic standalone datasets, there are risks to learn features that do not generalize to real life images, however, when creating additions to already existing datasets, there is high risk of creating an appendix that has a great parameter shift from the rest of the dataset, thus causing problems with convergence. 
+		
+		The VehicleX synthetic dataset is created with these problems in mind. It contains generated images with domain adaptation from VehicleID, VeRi-776 and CityFlow datasets \cite{yao2020simulating}. Each of these adapted versions can be paired with the original dataset to enhance learning results.
+		
+	\subsection{Edge implementation}
+		There is a consensus, that if we want to meet the requirements of a real-time system, we need to implement a network that follows the edge-computing paradigm. The edge-computing paradigm means that the video analytics run directly on the device and only the processed results and analytics are transmitted \cite{barthelemy2019edge}. Barthélemy \textit{et al.} have developed a pilot project in Liverpool, Australia, where they use mobility trackers using live CCTV feeds, with twenty sensors deployed over the city with the objective of citywide traffic monitoring in real-time. The devices had the ability to transmit the outputs either over Ethernet or LoRaWAN networks and had two main components: 1.) an NVIDIA Jetson TX2 high performance and power efficient embedded computing device with special units for accelerating neural network computations used for image processing and running Ubuntu 16.04 LTS and 2.) a Pycom LoPy 4 module handling the LoRaWAN communications.
 		 
 	
 	
 	
 	
-	\section{Proposed Method}
+\section{Proposed Methodology}
+	
+	In this chapter we would like to describe the proposed sequence of processes that would enable object re-identification: Object detection, feature extraction and saving and querying for an object in a vector database. We will touch on how these components fit together and how each part could be improved to better serve the common outcome. We will also introduce the application of this methodology in a smart city environment - the Vehicle ReID pipeline.
+	
+	\subsection{Object detection}
+	
+		In a scenario, where we are served with images or video frames that have objects of interest included, but not necessarily have these images cropped to the dimensions of the object, we need to find the objects in the image and decide on the extent of their size. This is possible by employing an object detection algorithm.
+		 
+		In theory, one could train or fine-tune their own object detection model to tailor for a specific object class. However, the latest off the shelf detection models are able to detect vehicles or people, for example, with very high precision. As mentioned in the \ref{sec:object detection} section YOLO v8 model is regarded as very accurate and suitable for real-time applications.
+		 
+		We will be using the YOLO v8 model to detect the objects of a specific class, determine their bounding boxes and saving cropped out images of these object bounds.
+	
+	\subsection{Feature extraction}
+	
+		Once we have cropped images of the objects, we need to extract their features and turn them into vector embeddings. This can be done with a re-identification model, that has learned to extract the features of specific objects and save them in an embedding. For this we will use the baseline model by Zheng \textit{et al.} As described in \ref{sec:vehicle re-identification} section, this baseline can be trained to fit vehicle, person or any other object re-identification. The model is implemented in Pytorch and can be readily customized. We will also use the surrounding project code for this model available on \cite{layumiGithub}. The author has provisioned tools to train, finetune, test and visualize the results of the inference process. The model code is available and can be modified in any stage.
+		
+	\subsection{Saving feature extractions}
+	
+		%pievieno rakstus par vektoru datubazem un saglabasanu
+		% maybe ari similarity search??
+		
+	\subsection{the Vehicle ReID pipeline}
+	
+		% Te mes iepazistinam sikak ar niansem ka piemeram network camera un to, kaa trennesim modeli konkreti ar vehicle datasetiem utt.
+	
+	
+	
+	 
+		
 %	Describe the steps of your multi-step pipeline for vehicle re-identification. Use equations and figures as needed.
 %	\begin{itemize}
 %		\item Object Detection

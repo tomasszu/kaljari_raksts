@@ -155,4 +155,16 @@ Z.~Tang, M.~Naphade, M.-Y. Liu, X.~Yang, S.~Birchfield, S.~Wang, R.~Kumar,
   \url{https://www.aicitychallenge.org/2020-data-and-evaluation/}, 2020,
   accessed: September 24, 2024.
 
+\bibitem{yao2020simulating}
+Y.~Yao, L.~Zheng, X.~Yang, M.~Naphade, and T.~Gedeon, ``Simulating content
+  consistent vehicle datasets with attribute descent,'' in \emph{Computer
+  Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28,
+  2020, Proceedings, Part VI 16}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Springer, 2020, pp. 775--791.
+
+\bibitem{layumiGithub}
+{layumi}, ``Pytorch reid,''
+  \url{https://github.com/layumi/Person_reID_baseline_pytorch/}, accessed:
+  September 24, 2024.
+
 \end{thebibliography}
