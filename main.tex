@@ -94,6 +94,7 @@ Object re-identification to this day is heavily reliant on extracting robust fea
 		The goal of Person re-identification is to match a person's visual identity across many different cameras or locations in video or image sequences. The SOTA in person re-identification can also be judged by the benchmark leaderboards available on Papers with code \cite{paperswithcode2024Persreid}. Some of the most important datasets-turned-benchmarks are: the Market-1501, where the current best Rank-1 accuracy is 98.27\% by Sharma \textit{et al.} \cite{sharma2021person}; the DukeMTMC-reID where the current best Rank-1 accuracy is 95.6\% by Wieczorek, \textit{et al.} \cite{wieczorek2021unreasonable}; and the CUHK03 where the current best Rank-1 accuracy is 98.7\% by by Sharma \textit{et al.} \cite{sharma2021person}. A modified version of the baseline model by Zheng \textit{et al.} has made an entry in the CUHK03 leaderboard 6th place in Rank-1 accuracy with 89.63\% and 3rd place in Rank-5 accuracy with 99.01\%.
 		
 	\subsection{Available datasets}
+	\label{sec:available datasets}
 	
 		One of the most ample vehicle detection datasets - UA-DETRAC comes from Wen \textit{et al.}  \cite{wen2020ua}. The UA-DETRAC benchmark dataset consists of 100 challenging video sequences captured from real-world traffic scenes. It can be used for object detection model training or fine-tuning.
 		
@@ -135,13 +136,67 @@ Object re-identification to this day is heavily reliant on extracting robust fea
 		Once we have cropped images of the objects, we need to extract their features and turn them into vector embeddings. This can be done with a re-identification model, that has learned to extract the features of specific objects and save them in an embedding. For this we will use the baseline model by Zheng \textit{et al.} As described in \ref{sec:vehicle re-identification} section, this baseline can be trained to fit vehicle, person or any other object re-identification. The model is implemented in Pytorch and can be readily customized. We will also use the surrounding project code for this model available on \cite{layumiGithub}. The author has provisioned tools to train, finetune, test and visualize the results of the inference process. The model code is available and can be modified in any stage.
 		
 	\subsection{Saving feature extractions}
-	
-		%pievieno rakstus par vektoru datubazem un saglabasanu
-		% maybe ari similarity search??
 		
-	\subsection{the Vehicle ReID pipeline}
+		Once we have managed to extract features from such rich data like images, we need to find a way to store and compare the extractions in a computationally inexpensive way. 
+		
+		These features have been turned into n-dimensional vectors that consist of natural, real or complex numbers, where one number represents a feature or a part of a feature. We should be able to compare these vectors for their similarity, to be able to retrieve the most similar object to the one being queried for. We can do this by using the Cosine similarity function. Cosine similarity is widely used and requires an input of at least two unit-length normalized vector inputs to output a vector distance \cite{bayardo2007scaling}.
+		
+		Efficient management of vector data would require a Vector database system, so vectors could be stored and queried as efficiently as possible \cite{taipalus2024vector}. This vector database will have to contain vector similarity search complemented by metadata filters. For a very simple interpretation of our task the database entries would simply be in the form of $$ Key:Value = ObjectId:ObjectFeaturesVector $$ while more fields for entries should be easy to add.
+		
+	\subsection{The Vehicle ReID pipeline}
 	
+		Having outlined the general components of object re-identification—such as object detection, feature extraction, and storing embeddings—this subsection will introduce the methodology that is specific  to a vehicle re-identification pipeline that is currently under development. This allows the paper to take on a more practical meaning and tests these ideas in real-life.
+		
+		We propose a pipeline that would take in video frames from a network camera \textit{x}, detect the vehicles in the frames, crop images of the vehicles and save them, turn these cropped images into feature embeddings and then save them in a vector database. The same process would be repeated for a different camera \textit{y ... z}, so that vehicles could be re-identified from camera \textit{x} to \textit{y ... z} or vice versa.
+		
+		To make sure we are developing a functional pipeline and are able to monitor the performance of each step we need to split the process into two parts, at least during the development stage:
+		
+		\begin{itemize}
+			\item \textbf{Vehicle counting and tracking}
+			
+			 The purpose of this process will be to count, track and save information about the vehicles that have passed through the view of a single camera. It should receive the videos from a network camera, detect the vehicles, start tracking them and establish the sectors where we count incoming and outgoing cars (for example entries and exits in an intersection). The count, entry and exit times of cars should be continuously logged.
+			\item \textbf{Vehicle Re-Identification}
+			
+			 Once we have vehicles detected and tracked, we need to decide on an approach about where and how often images of vehicles should be cropped out of the frame. Then we need to save these images, create feature extractions and save them in a vector database.
+		\end{itemize}
+	
+		We will also need to make sure that the methods that make up the pipeline are well tailored for our purpose. We introduce the following points of action:
+		\begin{itemize}
+			\item \textbf{Establishing sensible counting and tracking solutions}
+
+			We need to develop a solution that counts and tracks vehicles reliably, so that we know that the ReID process after that can run smoothly. We also need to keep a reliable log for supplementing the accuracy of ReID and analysis of the traffic flow.
+			
+			\item \textbf{Finding the best approach to save images of vehicles}
+
+			It might be important to figure out where and how often should vehicles be cropped out of the frame. A specific position in the camera-view might be more advantageous to save the vehicle and could produce a better feature vector. Complimentary to that, saving the vehicle in multiple positions in the same view might make it more recognizable in a different camera.
+			
+			\item \textbf{Training the ReID model on different datasets}
+			
+			We need to make sure, that we have tried all of the most widely used and publicized datasets (mentioned in \ref{sec:available datasets}), to see which fits best for our pipeline.
+			
+			\item \textbf{Using ensemble modeling}
+
+			An approach with including multiple models in feature extraction should be investigated, in case a single model can not deliver a high accuracy.
+			
+			\item \textbf{Going over model hyper-parameters}
+			
+			We need to go over many hyper-parameters during model training. It is valuable to make sure that the default training parameters listed for the baseline model by Zheng \textit{et al.} also fits best for our use case.
+			
+			\item \textbf{Experimenting with changing the baseline model architecture}
+
+			It can be valuable to see if changes in the architecture or prediction head of the baseline model by Zheng \textit{et al.} could improve accuracy.
+			
+		\end{itemize}
+				
 		% Te mes iepazistinam sikak ar niansem ka piemeram network camera un to, kaa trennesim modeli konkreti ar vehicle datasetiem utt.
+	\subsection{Testing the proposed methodology}
+	
+	
+	
+	
+	\subsection{Edge device considerations}
+	
+		% Te par to, ka mes jau itka esam uz edge device ( 8gb gpu desktop device - no clouds)
 	
 	
 	
@@ -154,7 +209,12 @@ Object re-identification to this day is heavily reliant on extracting robust fea
 %		\item Vector Embedding with LanceDB
 %	\end{itemize}
 	
-	\section{Experiments and Results}
+	\section{Experimental settings}
+	While the general steps remain consistent, the experimental settings section will detail the practical application of mentioned concepts, fitted specifically to the use-cases of vehicle ReID in a smart city setting. 	
+	
+%	Present the experiments, datasets, and evaluation metrics used to validate the method. Include tables, graphs, and illustrations.
+
+	\section{Results}
 %	Present the experiments, datasets, and evaluation metrics used to validate the method. Include tables, graphs, and illustrations.
 	
 	\section{Discussion}

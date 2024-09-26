@@ -163,8 +163,18 @@ Y.~Yao, L.~Zheng, X.~Yang, M.~Naphade, and T.~Gedeon, ``Simulating content
   Springer, 2020, pp. 775--791.
 
 \bibitem{layumiGithub}
-{layumi}, ``Pytorch reid,''
+{layumi}, ``Pytorch reid github repository,''
   \url{https://github.com/layumi/Person_reID_baseline_pytorch/}, accessed:
   September 24, 2024.
+
+\bibitem{bayardo2007scaling}
+R.~J. Bayardo, Y.~Ma, and R.~Srikant, ``Scaling up all pairs similarity
+  search,'' in \emph{Proceedings of the 16th international conference on World
+  Wide Web}, 2007, pp. 131--140.
+
+\bibitem{taipalus2024vector}
+T.~Taipalus, ``Vector database management systems: Fundamental concepts,
+  use-cases, and current challenges,'' \emph{Cognitive Systems Research},
+  vol.~85, p. 101216, 2024.
 
 \end{thebibliography}
