@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.9.16)  26 SEP 2024 14:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.9.16)  26 SEP 2024 17:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -369,47 +369,63 @@ See the caption package documentation for explanation.
 \c@caption@flags=\count288
 \c@continuedfloat=\count289
 Package caption Info: hyperref package is loaded.
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count290
+\float@exts=\toks23
+\float@box=\box54
+\@float@everytoks=\toks24
+\@floatcapt=\box55
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen184
+\WF@size=\dimen185
+\c@WF@wrappedlines=\count291
+\WF@box=\box56
+\WF@everypar=\toks25
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count290
-\l__pdf_internal_box=\box54
+\l__color_backend_stack_int=\count292
+\l__pdf_internal_box=\box57
 )
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 -- Lines per column: 56 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count291
-\scratchdimen=\dimen184
-\scratchbox=\box55
-\nofMPsegments=\count292
-\nofMParguments=\count293
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count294
-\MPscratchDim=\dimen185
-\MPnumerator=\count295
-\makeMPintoPDFobject=\count296
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count293
+\scratchdimen=\dimen186
+\scratchbox=\box58
+\nofMPsegments=\count294
+\nofMParguments=\count295
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count296
+\MPscratchDim=\dimen187
+\MPnumerator=\count297
+\makeMPintoPDFobject=\count298
+\everyMPtoPDFconversion=\toks27
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -419,7 +435,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 24.
+Package hyperref Info: Link coloring OFF on input line 26.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -430,25 +446,27 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count297
+\c@section@level=\count299
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<re_id_diagramma_1.png, id=95, 1285.80376pt x 349.305pt>
+<re_id_diagramma_1.png, id=96, 1285.80376pt x 349.305pt>
 File: re_id_diagramma_1.png Graphic file (type png)
 <use re_id_diagramma_1.png>
-Package pdftex.def Info: re_id_diagramma_1.png  used on input line 60.
+Package pdftex.def Info: re_id_diagramma_1.png  used on input line 62.
 (pdftex.def)             Requested size: 258.0pt x 70.08894pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 60--61
+Overfull \hbox (6.0pt too wide) in paragraph at lines 62--63
  [][] 
  []
 
@@ -456,17 +474,35 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 60--61
 
 
  <./re_id_diagramma_1.png (PNG copy)>] [2]
-<re_id_diagramma_2.png, id=155, 1127.21124pt x 796.9775pt>
+<re_id_diagramma_2.png, id=157, 1127.21124pt x 796.9775pt>
 File: re_id_diagramma_2.png Graphic file (type png)
 <use re_id_diagramma_2.png>
-Package pdftex.def Info: re_id_diagramma_2.png  used on input line 105.
+Package pdftex.def Info: re_id_diagramma_2.png  used on input line 107.
 (pdftex.def)             Requested size: 258.0pt x 182.41322pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 105--106
+Overfull \hbox (6.0pt too wide) in paragraph at lines 107--108
  [][] 
  []
 
-[3 <./re_id_diagramma_2.png>] (./main.bbl [4]
+[3 <./re_id_diagramma_2.png>]
+<re_id_diagramma_3.png, id=182, 5753.495pt x 1848.9075pt>
+File: re_id_diagramma_3.png Graphic file (type png)
+<use re_id_diagramma_3.png>
+Package pdftex.def Info: re_id_diagramma_3.png  used on input line 156.
+(pdftex.def)             Requested size: 516.0pt x 165.80203pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+ []
+
+[4] (./main.bbl
+Underfull \vbox (badness 1983) has occurred while \output is active []
+
+
 Underfull \hbox (badness 3668) in paragraph at lines 64--67
 []\OT1/ptm/m/n/8 S. Rath, ``Yolov8 : Com-pre-hen-sive guide to state of the art
 
@@ -478,7 +514,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--67
 ytics-[]yolov8 /
  []
 
-
+[5 <./re_id_diagramma_3.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 107--110
 []\OT1/ptm/m/n/8 Papers with Code, ``Ve-hi-cle re-identification bench-marks,''
 
@@ -522,18 +558,20 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5] (./main.aux)
+[6
+
+] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6279B812DDEDD504F0130E8842412382;3237.
+(rerunfilecheck)             Checksum: 94FA44D006038E689D2835FC70D153D9;3237.
  ) 
 Here is how much of TeX's memory you used:
- 11077 strings out of 478287
- 182046 string characters out of 5849289
- 491749 words of memory out of 5000000
- 29101 multiletter control sequences out of 15000+600000
+ 11222 strings out of 478287
+ 184608 string characters out of 5849289
+ 494460 words of memory out of 5000000
+ 29234 multiletter control sequences out of 15000+600000
  504103 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,63p,1738b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,63p,1764b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -541,10 +579,10 @@ fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 1121753 bytes).
+Output written on main.pdf (6 pages, 1434410 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
- 179 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 230 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 184 words of extra memory for PDF output out of 10000 (max. 10000000)
 

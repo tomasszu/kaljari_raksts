@@ -6,6 +6,8 @@
 \usepackage{hyperref} % For hyperlinks
 \usepackage{cite}     % For handling citations
 \usepackage{caption}  % For customizing captions
+\usepackage{float}
+\usepackage{wrapfig}
 
 
 % Title
@@ -50,7 +52,7 @@ Monitoring and recognizing objects in photos and videos has long been a field of
 % Te varetu ieklaut atsauci uz kadu pirmo sasniegumu objektu detektesanaa un pateikt ka vot vini domaja ka tas bija sasniegums
  In this article, however, the authors are looking for a solution that could see these objects of a single class and distinguish between them, using the specific features that exist only for a single individual in a class.
 % Te laikam vajag ielikt definiciju no kaada raksta:
- This problem is called object Re-Identification - widely regarded as a sub-problem of image retrieval \cite{li2019object}.In imagery from at least two different cameras, object Re-identification aims to correctly label the same individual after imaging conditions (like scene, lighting conditions, object pose and others) have changed. In fact, this could be repeated for a specific class in any number of scenes, where there are usually more of these class objects visible. These could be images of vehicles, people or even animals or simple in-animate objects that have great intra-class variations.
+ This problem is called object Re-Identification - widely regarded as a sub-problem of image retrieval \cite{li2019object}.In imagery from at least two different cameras, object Re-identification aims to correctly label the same individual after imaging conditions (like scene, lighting conditions, object pose and others) have changed. In fact, this could be repeated for a specific class in any number of scenes, where there are usually more of these class objects visible. These could be images of vehicles, people or even animals or simple in-animate objects that have great intra-class variations (See fig. \ref{fig:fig1}).
  
  We are also in a unique position where there is still a lot of research to be done on re-identification itself, however, at the same time we are faced with the need to tailor these solutions for edge computing to preserve relevance in global technology and research trends. This is because some of the most common applications of re-identification are in traffic and security that use network cameras and cloud computing \cite{barthelemy2019edge} \cite{wang2024efficient}.
  Cities are looking for edge-computing devices using computer vision and deep neural networks to track real-time events in the public space. With the development of the Internet of Everything (IoE), the number of smart devices connected to the internet, the volume of available video footage, and the influx of sensory data have made the large-scale accumulation of big data inevitable \cite{cao2020overview}. This is why fully automated systems are needed to process data and re-identify patterns and objects in the smart cities environment, for no human or group of humans can be employed to process all this data manually and more crucially - in real time.
@@ -98,7 +100,7 @@ Object re-identification to this day is heavily reliant on extracting robust fea
 	
 		One of the most ample vehicle detection datasets - UA-DETRAC comes from Wen \textit{et al.}  \cite{wen2020ua}. The UA-DETRAC benchmark dataset consists of 100 challenging video sequences captured from real-world traffic scenes. It can be used for object detection model training or fine-tuning.
 		
-		Some of the vehicle or person Re-ID datasets are already previously mentioned in the context of their usage in benchmarks. The VehicleID (PKU VehicleID) dataset has been introduced by Liu \textit{et al.} in \cite{liu2016deep}. It includes 26'267 unique vehicles with 221'763 images in total. Each image is attached with an ID label corresponding to the vehicle identity. It is the dataset with one of the biggest unique ID collections and features pictures with different resolutions and quality of visibility as well as vehicles in motion state. Vehicles are mostly seen, however, from the front and the back only. The VeRi-776 introduced by Xinchen Liu \textit{et al.} in \cite{liu2016deep2} contains 49'357 images of 776 unique vehicles from 20 different cameras. Each image is attached with vehicle ID, bounding box, type, color, brand. The dataset makes up for its smaller set of unique id's compared to the VehicleID with better quality pictures, better visibility and vehicles from all angles not just back and front. The CityFlow dataset introduced by Tang \textit{et al.} in \cite{tang2019cityflow} is part of the AI City challenge and is a traffic camera dataset consisting of more than 3 hours of synchronized HD videos from 40 cameras. The dataset contains 229'680 images and around 700 unique vehicles. The 2020 AI City challenge \cite{aicity2020data} includes this dataset as videos, but also as cropped vehicle images for ReID model training. The quality of images is high and vehicles can be seen from many angles. The difference between this and the previous two widely used datasets is the types of vehicles seen, namely, US American versus Chinese, which creates a great parameter shift.
+		Some of the vehicle or person Re-ID datasets are already previously mentioned in the context of their usage in benchmarks. The VehicleID (PKU VehicleID) dataset has been introduced by Liu \textit{et al.} in \cite{liu2016deep}. It includes 26'267 unique vehicles with 221'763 images in total. Each image is attached with an ID label corresponding to the vehicle identity. It is the dataset with one of the biggest unique ID collections and features pictures with different resolutions and quality of visibility as well as vehicles in motion state. Vehicles are mostly seen, however, from the front and the back only. The VeRi-776 introduced by Xinchen Liu \textit{et al.} in \cite{liu2016deep2} contains 49'357 images of 776 unique vehicles from 20 different cameras. Each image is attached with vehicle ID, bounding box, type, color, brand. The dataset makes up for its smaller set of unique id's compared to the VehicleID with better quality pictures, better visibility and vehicles from all angles not just back and front. The CityFlow dataset introduced by Tang \textit{et al.} in \cite{tang2019cityflow} is part of the AI City challenge and is a traffic camera dataset consisting of more than 3 hours of synchronized HD videos from 40 cameras. The dataset contains 229'680 images and around 700 unique vehicles. The 2020 AI City challenge \cite{aicity2020data} includes this dataset as videos, but also as cropped vehicle images for ReID model training. The quality of images is high and vehicles can be seen from many angles. The difference between this and the previous two widely used datasets is the types of vehicles seen, namely, US American versus Chinese, which creates a great parameter shift (See fig. \ref{fig:fig2}).
 	
 	 \begin{figure}[t]
 		\centering
@@ -147,7 +149,14 @@ Object re-identification to this day is heavily reliant on extracting robust fea
 	
 		Having outlined the general components of object re-identification—such as object detection, feature extraction, and storing embeddings—this subsection will introduce the methodology that is specific  to a vehicle re-identification pipeline that is currently under development. This allows the paper to take on a more practical meaning and tests these ideas in real-life.
 		
-		We propose a pipeline that would take in video frames from a network camera \textit{x}, detect the vehicles in the frames, crop images of the vehicles and save them, turn these cropped images into feature embeddings and then save them in a vector database. The same process would be repeated for a different camera \textit{y ... z}, so that vehicles could be re-identified from camera \textit{x} to \textit{y ... z} or vice versa.
+		We propose a pipeline that would take in video frames from a network camera \textit{x}, detect the vehicles in the frames, crop images of the vehicles and save them, turn these cropped images into feature embeddings and then save them in a vector database. The same process would be repeated for a different camera \textit{y ... z}, so that vehicles could be re-identified from camera \textit{x} to \textit{y ... z} or vice versa (see fig. \ref{fig:fig3}).
+		%\clearpage
+		\begin{figure*}[h]
+			\centering
+			\includegraphics[width=\textwidth]{re_id_diagramma_3.png} % Adjust width as needed
+			\caption{The proposed structure of the re-identification pipeline.}
+			\label{fig:fig3} % Label for referencing the image
+		\end{figure*}
 		
 		To make sure we are developing a functional pipeline and are able to monitor the performance of each step we need to split the process into two parts, at least during the development stage:
 		
@@ -187,14 +196,37 @@ Object re-identification to this day is heavily reliant on extracting robust fea
 			It can be valuable to see if changes in the architecture or prediction head of the baseline model by Zheng \textit{et al.} could improve accuracy.
 			
 		\end{itemize}
+	
 				
 		% Te mes iepazistinam sikak ar niansem ka piemeram network camera un to, kaa trennesim modeli konkreti ar vehicle datasetiem utt.
 	\subsection{Testing the proposed methodology}
+		Since the pipeline is in development, we will first need to conduct a series of tests for individual components and use cases, before we can bring the whole pipeline together for testing.
+		
+	\begin{itemize}
+		\item \textbf{Testing on a dataset}
+		
+		We need to test the model itself on a dataset to see the accuracy with which the model makes predictions in a very controlled environment such as cropped pictures of vehicles. However, this does not mean that the model has to be tested exclusively on test data of the same dataset, we could also test the model on vehicle images from the network cameras we plan to be using it on.
+		
+		\item \textbf{Testing on video scenarios}
+		
+		To test all the components of the re-identification process part of the pipeline we might choose a pre-recorded scene of traffic that has ground truth available. We could skip the object detection and tracking part, hence the ground truth would let the pipeline know where the cars in the frame are and what is their pre-assigned ID. In this case only the bounding box cropping, feature extraction, saving and querying the database could be tested.
+		
+		\item \textbf{Creating video scenarios}
+		
+		We might also choose to record video scenarios and create the ground truth ourselves from the Network cameras available. This way the test will be the closest to the real world scenario we should tailor our pipeline for.\newline
+		
+	\end{itemize}
 	
+	Before testing the re-identification functionality, it is important to test the vehicle counting step to make sure the process is accurate. This, however, falls slightly outside of the scope of the paper, so we have purposefully chosen to leave these sections out.
+	
+	At the end of successful testing of all steps of the pipeline, one should create a video test scenario that starts with object detection and does not count on the ground truth bounding box and pre-assigned vehicle id data, encompassing both: 1.) vehicle counting and tracking and 2.) vehicle re-identification functionalities.
 	
 	
 	
 	\subsection{Edge device considerations}
+	
+	While the pipeline has been tested on a desktop computer with an 8GB GPU, this setup provides a rough estimate of the computational load and performance we might expect on edge devices like the NVIDIA Jetson series \cite{valladares2021performance}. Current work suggests that despite differences in power consumption and architecture, the constraints with desktop testing can offer insights for edge deployment that we wish to implement in the future.
+	
 	
 		% Te par to, ka mes jau itka esam uz edge device ( 8gb gpu desktop device - no clouds)
 	

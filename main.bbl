@@ -177,4 +177,13 @@ T.~Taipalus, ``Vector database management systems: Fundamental concepts,
   use-cases, and current challenges,'' \emph{Cognitive Systems Research},
   vol.~85, p. 101216, 2024.
 
+\bibitem{valladares2021performance}
+S.~Valladares, M.~Toscano, R.~Tufi{\~n}o, P.~Morillo, and D.~Vallejo-Huanga,
+  ``Performance evaluation of the nvidia jetson nano through a real-time
+  machine learning application,'' in \emph{Intelligent Human Systems
+  Integration 2021: Proceedings of the 4th International Conference on
+  Intelligent Human Systems Integration (IHSI 2021): Integrating People and
+  Intelligent Systems, February 22-24, 2021, Palermo, Italy}.\hskip 1em plus
+  0.5em minus 0.4em\relax Springer, 2021, pp. 343--349.
+
 \end{thebibliography}
