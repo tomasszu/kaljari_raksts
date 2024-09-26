@@ -199,52 +199,70 @@ Object re-identification to this day is heavily reliant on extracting robust fea
 	
 				
 		% Te mes iepazistinam sikak ar niansem ka piemeram network camera un to, kaa trennesim modeli konkreti ar vehicle datasetiem utt.
-	\subsection{Testing the proposed methodology}
-		Since the pipeline is in development, we will first need to conduct a series of tests for individual components and use cases, before we can bring the whole pipeline together for testing.
+		\subsection{Testing the proposed methodology}
+			Since the pipeline is in development, we will first need to conduct a series of tests for individual components and use cases, before we can bring the whole pipeline together for testing.
+			
+		\begin{itemize}
+			\item \textbf{Testing on a dataset}
+			
+			We need to test the model itself on a dataset to see the accuracy with which the model makes predictions in a very controlled environment such as cropped pictures of vehicles. However, this does not mean that the model has to be tested exclusively on test data of the same dataset, we could also test the model on vehicle images from the network cameras we plan to be using it on.
+			
+			\item \textbf{Testing on video scenarios}
+			
+			To test all the components of the re-identification process part of the pipeline we might choose a pre-recorded scene of traffic that has ground truth available. We could skip the object detection and tracking part, hence the ground truth would let the pipeline know where the cars in the frame are and what is their pre-assigned ID. In this case only the bounding box cropping, feature extraction, saving and querying the database could be tested.
+			
+			\item \textbf{Creating video scenarios}
+			
+			We might also choose to record video scenarios and create the ground truth ourselves from the Network cameras available. This way the test will be the closest to the real world scenario we should tailor our pipeline for.\newline
+			
+		\end{itemize}
 		
-	\begin{itemize}
-		\item \textbf{Testing on a dataset}
+		Before testing the re-identification functionality, it is important to test the vehicle counting step to make sure the process is accurate. This, however, falls slightly outside of the scope of the paper, so we have purposefully chosen to leave these sections out.
 		
-		We need to test the model itself on a dataset to see the accuracy with which the model makes predictions in a very controlled environment such as cropped pictures of vehicles. However, this does not mean that the model has to be tested exclusively on test data of the same dataset, we could also test the model on vehicle images from the network cameras we plan to be using it on.
+		At the end of successful testing of all steps of the pipeline, one should create a video test scenario that starts with object detection and does not count on the ground truth bounding box and pre-assigned vehicle id data, encompassing both: 1.) vehicle counting and tracking and 2.) vehicle re-identification functionalities.
 		
-		\item \textbf{Testing on video scenarios}
 		
-		To test all the components of the re-identification process part of the pipeline we might choose a pre-recorded scene of traffic that has ground truth available. We could skip the object detection and tracking part, hence the ground truth would let the pipeline know where the cars in the frame are and what is their pre-assigned ID. In this case only the bounding box cropping, feature extraction, saving and querying the database could be tested.
 		
-		\item \textbf{Creating video scenarios}
+		\subsection{Edge device considerations}
 		
-		We might also choose to record video scenarios and create the ground truth ourselves from the Network cameras available. This way the test will be the closest to the real world scenario we should tailor our pipeline for.\newline
-		
-	\end{itemize}
-	
-	Before testing the re-identification functionality, it is important to test the vehicle counting step to make sure the process is accurate. This, however, falls slightly outside of the scope of the paper, so we have purposefully chosen to leave these sections out.
-	
-	At the end of successful testing of all steps of the pipeline, one should create a video test scenario that starts with object detection and does not count on the ground truth bounding box and pre-assigned vehicle id data, encompassing both: 1.) vehicle counting and tracking and 2.) vehicle re-identification functionalities.
-	
-	
-	
-	\subsection{Edge device considerations}
-	
-	While the pipeline has been tested on a desktop computer with an 8GB GPU, this setup provides a rough estimate of the computational load and performance we might expect on edge devices like the NVIDIA Jetson series \cite{valladares2021performance}. Current work suggests that despite differences in power consumption and architecture, the constraints with desktop testing can offer insights for edge deployment that we wish to implement in the future.
-	
-	
-		% Te par to, ka mes jau itka esam uz edge device ( 8gb gpu desktop device - no clouds)
-	
-	
-	
-	 
-		
-%	Describe the steps of your multi-step pipeline for vehicle re-identification. Use equations and figures as needed.
-%	\begin{itemize}
-%		\item Object Detection
-%		\item Feature Extraction
-%		\item Vector Embedding with LanceDB
-%	\end{itemize}
+		While the pipeline has been tested on a desktop computer with an 8GB GPU, this setup provides a rough estimate of the computational load and performance we might expect on edge devices like the NVIDIA Jetson series \cite{valladares2021performance}. Current work suggests that despite differences in power consumption and architecture, the constraints with desktop testing can offer insights for edge deployment that we wish to implement in the future.
+
 	
 	\section{Experimental settings}
-	While the general steps remain consistent, the experimental settings section will detail the practical application of mentioned concepts, fitted specifically to the use-cases of vehicle ReID in a smart city setting. 	
-	
-%	Present the experiments, datasets, and evaluation metrics used to validate the method. Include tables, graphs, and illustrations.
+		
+		While the general steps remain consistent with the proposed methodology, the experimental settings section will detail the practical set-up of mentioned concepts, fitted specifically to the use-cases of vehicle ReID in a smart city setting. We will describe the settings for the Vehicle counting and tracking part of the pipeline, Vehicle Re-Identification part of the pipeline, the available datasets used for training, synthetic data used to augment the datasets, experimenting with ensemble modeling, going over hyper-parameters, experiments with changing the model architecture, creating tests and hardware used.
+		
+		\subsection{Vehicle counting and tracking}
+			In this sub-section we will elaborate on the implementation of the counting and tracking part of the pipeline.
+			\subsubsection{Receiving video from a Network camera}
+				To simulate a traffic scenario for tracking and ReID applications, we will use 3 AXIS P1427-LE Network cameras \cite{axisCam} that record footage from the same service road and a parking lot.
+				We are receiving the video in 1280x960 resolution with $\sim$ 2 fps over RTSP, however, HTTP works as well. A 25-30\% compression rate is employed as well for better data transmission.
+				
+				The view from the cameras (See fig. \ref{fig:fig4}) can be summarized in the following way:
+				
+				\begin{figure}[b]
+					\centering
+					\includegraphics[width=0.5\textwidth]{re_id_diagramma_4.png} % Adjust width as needed
+					\caption{The same car visible in cameras (from the left) 1., 2. and 3., respectively.}
+					\label{fig:fig4} % Label for referencing the image
+				\end{figure}
+				
+				\begin{itemize}
+					\item \textbf{Camera 1.}
+					
+					This camera sees cars entering and exiting the inner service road from the parking lot from outside of the territory. Gates are also visible. It is located about 3 to 4 meters above ground and generally allows us to see both the front/back of the car and the sides of the car. For non-cargo vehicles, the roof is also visible.
+					
+					\item \textbf{Camera 2.}
+					
+					This camera is located above the gates and can see into the parking lot. We can see the opposite side of the car as opposed to camera 1. It is also located about 3 to 4 meters above ground, however, cars are seen more from the front and the back, but skewed sides and roof are visible.
+					
+					\item \textbf{Camera 3.}
+
+					This camera is located deeper into the territory and generally sees the whole service road with the parking lot in a far distance. The camera is much higher than 1. and 2. and is about 6 to 8 meters above ground. We can see the front/back and roof of the car well, however, the sides are not visible in such quality because of the altitude and angle of the camera.\newline
+					
+				\end{itemize}
+		
+	%	Present the experiments, datasets, and evaluation metrics used to validate the method. Include tables, graphs, and illustrations.
 
 	\section{Results}
 %	Present the experiments, datasets, and evaluation metrics used to validate the method. Include tables, graphs, and illustrations.

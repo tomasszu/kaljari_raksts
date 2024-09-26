@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.9.16)  26 SEP 2024 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.9.16)  26 SEP 2024 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,7 +460,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<re_id_diagramma_1.png, id=96, 1285.80376pt x 349.305pt>
+<re_id_diagramma_1.png, id=104, 1285.80376pt x 349.305pt>
 File: re_id_diagramma_1.png Graphic file (type png)
 <use re_id_diagramma_1.png>
 Package pdftex.def Info: re_id_diagramma_1.png  used on input line 62.
@@ -474,7 +474,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 62--63
 
 
  <./re_id_diagramma_1.png (PNG copy)>] [2]
-<re_id_diagramma_2.png, id=157, 1127.21124pt x 796.9775pt>
+<re_id_diagramma_2.png, id=165, 1127.21124pt x 796.9775pt>
 File: re_id_diagramma_2.png Graphic file (type png)
 <use re_id_diagramma_2.png>
 Package pdftex.def Info: re_id_diagramma_2.png  used on input line 107.
@@ -485,7 +485,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 107--108
  []
 
 [3 <./re_id_diagramma_2.png>]
-<re_id_diagramma_3.png, id=182, 5753.495pt x 1848.9075pt>
+<re_id_diagramma_3.png, id=190, 5753.495pt x 1848.9075pt>
 File: re_id_diagramma_3.png Graphic file (type png)
 <use re_id_diagramma_3.png>
 Package pdftex.def Info: re_id_diagramma_3.png  used on input line 156.
@@ -499,10 +499,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
-[4] (./main.bbl
-Underfull \vbox (badness 1983) has occurred while \output is active []
+[4]
+<re_id_diagramma_4.png, id=205, 1301.86375pt x 481.8pt>
+File: re_id_diagramma_4.png Graphic file (type png)
+<use re_id_diagramma_4.png>
+Package pdftex.def Info: re_id_diagramma_4.png  used on input line 245.
+(pdftex.def)             Requested size: 258.0pt x 95.47609pt.
 
+Overfull \hbox (6.0pt too wide) in paragraph at lines 245--246
+ [][] 
+ []
 
+[5 <./re_id_diagramma_3.png> <./re_id_diagramma_4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+
+ []
+
+(./main.bbl
 Underfull \hbox (badness 3668) in paragraph at lines 64--67
 []\OT1/ptm/m/n/8 S. Rath, ``Yolov8 : Com-pre-hen-sive guide to state of the art
 
@@ -514,7 +527,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--67
 ytics-[]yolov8 /
  []
 
-[5 <./re_id_diagramma_3.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 107--110
 []\OT1/ptm/m/n/8 Papers with Code, ``Ve-hi-cle re-identification bench-marks,''
 
@@ -546,6 +559,12 @@ Underfull \hbox (badness 6625) in paragraph at lines 154--157
 : / / www .
  []
 
+
+Underfull \hbox (badness 3965) in paragraph at lines 190--193
+\OT1/ptm/m/n/8 era,'' []$https : / / www . axis . com / products / axis-[]p1427
+-[]le / support$[], ac-cessed:
+ []
+
 )
 
 ** Conference Paper **
@@ -558,31 +577,30 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6
-
-] (./main.aux)
+[6] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 94FA44D006038E689D2835FC70D153D9;3237.
+(rerunfilecheck)             Checksum: 3C46A487A8CABCE140FF89C56D6C25DD;3717.
  ) 
 Here is how much of TeX's memory you used:
- 11222 strings out of 478287
- 184608 string characters out of 5849289
- 494460 words of memory out of 5000000
- 29234 multiletter control sequences out of 15000+600000
+ 11237 strings out of 478287
+ 184903 string characters out of 5849289
+ 498603 words of memory out of 5000000
+ 29244 multiletter control sequences out of 15000+600000
  504103 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,63p,1764b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,63p,1764b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 1434410 bytes).
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8
+a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (6 pages, 2264477 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 230 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 184 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 282 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 205 words of extra memory for PDF output out of 10000 (max. 10000000)
 
