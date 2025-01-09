@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0" version="26.0.4">
+  <diagram name="Page-1" id="_WKUjk_ouQ1p5Q2WhDgg">
+    <mxGraphModel dx="934" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-36" value="Object re-identification in smart cities" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFBB00;strokeColor=#d79b00;fontColor=light-dark(#ffffff, #ededed);fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="340" y="208" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-38" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.jumpInArrow;dy=15;dx=38;arrowHead=55;rotation=-150;sketch=1;curveFitting=1;jiggle=2;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" vertex="1" parent="1">
+          <mxGeometry x="240" y="270" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-39" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.jumpInArrow;dy=15;dx=38;arrowHead=55;rotation=-210;flipV=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="240" y="120" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-40" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.jumpInArrow;dy=15;dx=38;arrowHead=55;rotation=-195;sketch=1;curveFitting=1;jiggle=2;flipH=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" vertex="1" parent="1">
+          <mxGeometry x="560" y="270" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-41" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.jumpInArrow;dy=15;dx=38;arrowHead=55;rotation=-135;flipV=1;sketch=1;curveFitting=1;jiggle=2;flipH=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;" vertex="1" parent="1">
+          <mxGeometry x="576" y="130" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-42" value="Baggage" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;fontSize=16;fontStyle=1;spacing=2;textShadow=0;labelBorderColor=none;labelBackgroundColor=none;fontColor=#295A0D;rotation=-15;" vertex="1" parent="1">
+          <mxGeometry x="234" y="140" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-43" value="Animal" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;fontSize=16;fontStyle=1;spacing=2;textShadow=0;labelBorderColor=none;labelBackgroundColor=none;fontColor=#854B00;rotation=5;" vertex="1" parent="1">
+          <mxGeometry x="251" y="323" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-44" value="&lt;span style=&quot;color: rgb(116, 79, 103);&quot;&gt;Person&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;fontSize=16;fontStyle=1;spacing=2;textShadow=0;labelBorderColor=none;labelBackgroundColor=none;fontColor=#CDA2BE;rotation=-10;" vertex="1" parent="1">
+          <mxGeometry x="589" y="324" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-45" value="&lt;span style=&quot;color: rgb(0, 102, 204);&quot;&gt;Vehicle&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;fontSize=16;fontStyle=1;spacing=2;textShadow=0;labelBorderColor=none;labelBackgroundColor=none;fontColor=#CDA2BE;rotation=20;" vertex="1" parent="1">
+          <mxGeometry x="601" y="151" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-46" value="" style="shape=mxgraph.signs.travel.baggage;html=1;pointerEvents=1;fillColor=#97D077;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontColor=#295A0D;" vertex="1" parent="1">
+          <mxGeometry x="369" y="151" width="45" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-49" value="" style="shape=mxgraph.signs.sports.rv;html=1;pointerEvents=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="470" y="151" width="69" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-71" value="" style="shape=mxgraph.signs.animals.bear_1;html=1;pointerEvents=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="369" y="282.5" width="70" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-72" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=#9673a6;fillColor=#e1d5e7;shape=mxgraph.azure.user;" vertex="1" parent="1">
+          <mxGeometry x="480.75" y="282.5" width="47.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-73" value="&lt;div align=&quot;left&quot; style=&quot;line-height: 160%;&quot;&gt;&lt;ul&gt;&lt;li&gt;Luggage&lt;/li&gt;&lt;li&gt;Backpack&lt;/li&gt;&lt;li&gt;Handbag&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=6;fontColor=#295A0D;" vertex="1" parent="1">
+          <mxGeometry x="114" y="130" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-74" value="&lt;div style=&quot;line-height: 160%;&quot; align=&quot;left&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;Cat&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;Dog&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;Bird&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=6;fontColor=#7E3F03;" vertex="1" parent="1">
+          <mxGeometry x="114" y="274" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-75" value="&lt;div align=&quot;left&quot; style=&quot;line-height: 160%;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;Pedestrian&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;Jaywalker&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;Shoplifter&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=6;fontColor=#744F67;" vertex="1" parent="1">
+          <mxGeometry x="630" y="273" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-QXB7nVGdJtn-JyD2IQ0-76" value="&lt;div style=&quot;line-height: 160%;&quot; align=&quot;left&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;Car&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;Truck&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;Bus&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=6;fontColor=#0066CC;" vertex="1" parent="1">
+          <mxGeometry x="650" y="150" width="130" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
