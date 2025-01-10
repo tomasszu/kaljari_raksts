@@ -1,0 +1,136 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.4">
+  <diagram name="Page-1" id="jRfl2hFwIMHoIxbAawzJ">
+    <mxGraphModel dx="3385" dy="1983" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="H_wlE845dx61PJSCgCME-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F6FC;strokeColor=#6c8ebf;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="150" y="320" width="1270" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-4" value="" style="points=[[0,0.5,0],[0.19,0.02,0],[0.59,0,0],[0.985,0.02,0],[1,0.5,0],[0.985,0.98,0],[0.59,1,0],[0.19,0.98,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.camera;fillColor=#005073;strokeColor=none;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="220" y="500" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-6" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios.iSortFindIcon;fillColor=#8BbEff;fillColor2=#135Ec8;strokeColor=#ffffff;sketch=0;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="520" y="490.5" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=8;align=center;verticalAlign=middle;fontFamily=Times New Roman;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#dae8fc;" parent="1" source="H_wlE845dx61PJSCgCME-8" target="H_wlE845dx61PJSCgCME-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-8" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;fillColor=#3B8DF1;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;shape=mxgraph.gcp2.files;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="760" y="502" width="100" height="97" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#6c8ebf;strokeWidth=8;align=center;verticalAlign=middle;fontFamily=Times New Roman;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#dae8fc;" parent="1" source="H_wlE845dx61PJSCgCME-10" target="H_wlE845dx61PJSCgCME-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-10" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/other/Connected_Vehicle_Platform.svg;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="960" y="485" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-11" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/database_cube.svg;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="474" width="135.9" height="151" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.039;entryY=0.507;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=8;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;" parent="1" source="H_wlE845dx61PJSCgCME-4" target="H_wlE845dx61PJSCgCME-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.003;entryY=0.491;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#6c8ebf;strokeWidth=8;align=center;verticalAlign=middle;fontFamily=Times New Roman;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#dae8fc;" parent="1" source="H_wlE845dx61PJSCgCME-6" target="H_wlE845dx61PJSCgCME-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-16" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Receiving video&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="240" y="390.5" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-18" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Vehicle detection&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=12;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="495" y="390.5" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-19" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Assigning ID&#39;s &amp;amp;&lt;br&gt;Counting vehicles&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=12;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="720" y="385" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-20" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Vehicles into feature embeddings&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=12;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="950" y="340.5" width="170" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-21" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Saving in Vector database&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=12;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="1205.9" y="365.5" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-23" value="&lt;font style=&quot;font-size: 64px;&quot;&gt;Scene/Camera 1.&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="150" y="220" width="580" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-24" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8D7E8;strokeColor=#36393d;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="1650" y="320" width="1270" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-25" value="" style="points=[[0,0.5,0],[0.19,0.02,0],[0.59,0,0],[0.985,0.02,0],[1,0.5,0],[0.985,0.98,0],[0.59,1,0],[0.19,0.98,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.camera;fillColor=#005073;strokeColor=none;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="1720" y="500" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-26" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios.iSortFindIcon;fillColor=#8BbEff;fillColor2=#135Ec8;strokeColor=#ffffff;sketch=0;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="2020" y="490.5" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=8;align=center;verticalAlign=middle;fontFamily=Times New Roman;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#dae8fc;" parent="1" source="H_wlE845dx61PJSCgCME-28" target="H_wlE845dx61PJSCgCME-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-28" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;fillColor=#3B8DF1;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;shape=mxgraph.gcp2.files;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="2260" y="502" width="100" height="97" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#6c8ebf;strokeWidth=8;align=center;verticalAlign=middle;fontFamily=Times New Roman;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#dae8fc;" parent="1" source="H_wlE845dx61PJSCgCME-30" target="H_wlE845dx61PJSCgCME-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-30" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/other/Connected_Vehicle_Platform.svg;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="2460" y="485" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-31" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/database_cube.svg;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="2740" y="474" width="135.9" height="151" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.039;entryY=0.507;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=8;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;" parent="1" source="H_wlE845dx61PJSCgCME-25" target="H_wlE845dx61PJSCgCME-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.003;entryY=0.491;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#6c8ebf;strokeWidth=8;align=center;verticalAlign=middle;fontFamily=Times New Roman;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#dae8fc;" parent="1" source="H_wlE845dx61PJSCgCME-26" target="H_wlE845dx61PJSCgCME-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-34" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Receiving video&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="1740" y="390.5" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-35" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Vehicle detection&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=12;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="1995" y="390.5" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-36" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Assigning ID&#39;s &amp;amp;&lt;br&gt;Counting vehicles&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=12;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="2220" y="385" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-37" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Vehicles into feature embeddings&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=12;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="2450" y="340.5" width="170" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-38" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Finding similarity in vector database&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=12;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="2705.9" y="365.5" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-39" value="&lt;font style=&quot;font-size: 64px;&quot;&gt;Scene/Camera 2.&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="1650" y="220" width="580" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-40" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;shape=mxgraph.mscae.oms.log_search;fillColor=#7EA6E0;strokeColor=#FFFFFF;strokeWidth=4;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="2690" y="485" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-41" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fillColor=#F8D7E8;strokeColor=#ae4132;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="760" y="625" width="100" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-42" value="" style="sketch=0;outlineConnect=0;fillColor=#0066CC;strokeColor=#6c8ebf;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.logs;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="781.5" y="890" width="57" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-43" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Keeping logs of Vehicle entry, exit, count&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="662.5" y="980" width="295" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-44" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="2260" y="625" width="100" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-45" value="" style="sketch=0;outlineConnect=0;fillColor=#0066CC;strokeColor=#6c8ebf;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.logs;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="2281.5" y="890" width="57" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-46" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Keeping logs of Vehicle entry, exit, count&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="2162.5" y="980" width="295" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-47" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="2757.5" y="625" width="100" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-48" value="" style="sketch=0;outlineConnect=0;fillColor=#0066CC;strokeColor=#6c8ebf;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.logs;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="2779" y="890" width="57" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="H_wlE845dx61PJSCgCME-49" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Some form of logs about Re-Identified vehicles&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="2660" y="980" width="295" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
